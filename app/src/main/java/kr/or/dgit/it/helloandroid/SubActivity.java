@@ -11,7 +11,7 @@ public class SubActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTitle(R.string.subavtivity);
         TextView tv = new TextView(SubActivity.this);
-        tv.setText(R.string.subavtivity);
+        tv.setText("SubActivity 화면");
         setContentView(tv);
     }
 }
