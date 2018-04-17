@@ -2,6 +2,8 @@ package kr.or.dgit.it.helloandroid;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class SubActivity extends AppCompatActivity {
@@ -10,8 +12,14 @@ public class SubActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle(R.string.subavtivity);
-        TextView tv = new TextView(SubActivity.this);
-        tv.setText("SubActivity 화면");
-        setContentView(tv);
+        Button btnClose = new Button(getApplicationContext());
+        btnClose.setText("종료");
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        setContentView(btnClose);
     }
 }
