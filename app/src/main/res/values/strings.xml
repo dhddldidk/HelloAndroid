@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HelloAndroid</string>
+    <string name="btnClickMsg">버튼을 눌렀습니다.</string>
+    <string name="subavtivity">subAvtivity</string>
 </resources>
