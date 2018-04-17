@@ -13,7 +13,7 @@ public class SubActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTitle(R.string.subavtivity);
         Button btnClose = new Button(getApplicationContext());
-        btnClose.setText("종료");
+        btnClose.setText("종료 누르세요");
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
